@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+.grid-container{
+    /* padding: 20px 20px; */
+    background-color: rgb(0, 0, 255);
+    display: grid;
+    grid-template-rows: 50px 30px;
+    grid-template-columns: 300px;
+}
+.display{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 0);
+}
+.fn-keys{
+    display: grid;
+    grid-template-columns: 120px 60px 120px;
+    grid-template-rows: 30px 100px;
+}
+.expression-keys{
+    display: grid;
+    grid-template-columns: 180px 120px;
+}
+.num-keys{
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: auto auto auto auto;
+}
+.op-keys{
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 40px 40px;
+}
+.equals-key{
+    display: grid;
+    grid-template-columns: 120px;
+    grid-template-rows: 60px;
+}
+button{
+    align-content: center;
+    background-color: aliceblue;
+    border-radius: 3px;
+
+}
