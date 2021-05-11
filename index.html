@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Simple Calculator</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main-container">
         <div class="grid-container">
             <div class="display">
                 <h3 id='result-text'>result text</h3>
+                <hr>
                 <h3 id='expression-text'>expression text</h3>
             </div>
             <div class="fn-keys">
@@ -20,7 +22,7 @@
                 <button id="fn-del">del</button>
             </div>
             <div class="expression-keys">
-                <div class="num-keys">
+                <div class="num-keys-container">
                     <button class="num-keys" id="num-1">1</button>
                     <button class="num-keys" id="num-2">2</button>
                     <button class="num-keys" id="num-3">3</button>
@@ -37,7 +39,7 @@
                 <div class="op-keys">
                     <button id="op-minus">-</button>
                     <button id="op-divide">/</button>
-                    <button id="op-multiply">x</button>
+                    <button id="op-multiply">X</button>
                     <button id="op-plus">+</button>
                     <div class="equals-key">
                         <button id="equals-key-btn">=</button>
