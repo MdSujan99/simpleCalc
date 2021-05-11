@@ -10,16 +10,17 @@ expKeys.onclick = function(event) {
     // console.log(event)
 	if(event.target.nodeName == 'BUTTON'){
         if(event.target.id != 'equals-key-btn'){
-            if(expressionText.innerText == "expression text")
+            if(expressionText.innerText == "expression text:")
                 expressionText.innerText = ""
-            else if(event.target.innerText === "X"){
+            if(event.target.innerText === "X"){
                 expressionText.innerText += "*"
             }
             else{
                 expressionText.innerText += event.target.innerText
             }
         }
-        else{
+        else    // if the user enters equals button
+        { 
             // evaluate the expressionText
             try{
                 // console.log(eval(expressionText.innerText))
@@ -43,5 +44,8 @@ fnKeys.onclick = function(event) {
         else if(event.target.id == 'fn-del'){
             expressionText.innerText = expressionText.innerText.slice(0,-1)
         }
+        // else if(event.target.id == 'fn-ON-OFF'){
+        //     expressionText.innerText =
+        // }
 	}
 }
