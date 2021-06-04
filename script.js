@@ -2,8 +2,8 @@ const expKeys = document.getElementsByClassName("expression-keys")[0]
 const fnKeys = document.getElementsByClassName("fn-keys")[0]
 const expressionText = document.getElementById("expression-text")
 const resultText = document.getElementById("result-text")
-// const buttonClickSound = new Audio()
-// buttonClickSound.src = "mouseClick.mp3"
+const buttonClickSound = new Audio()
+buttonClickSound.src = "mouseClick.mp3"
 
 expKeys.onclick = function(event) {
     // console.log(event)
