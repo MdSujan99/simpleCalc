@@ -8,6 +8,8 @@ buttonClickSound.src = "mouseClick.mp3"
 expKeys.onclick = function(event) {
     // console.log(event)
 	if(event.target.nodeName == 'BUTTON'){
+		buttonClickSound.play()
+		buttonClickSound.src = "mouseClick.mp3"
         if(event.target.id != 'equals-key-btn'){
             if(expressionText.innerText == "expression text:"){
                 expressionText.innerText = ""
