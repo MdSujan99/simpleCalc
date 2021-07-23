@@ -27,7 +27,7 @@ expKeys.onclick = function(event) {
         else
         { 
             try{
-                resultText.innerText = eval(expressionText.innerHTML)
+                resultText.innerText = calc(expressionText.innerText)
             }catch(e){
                 console.log(e)
                 resultText.innerText = e
